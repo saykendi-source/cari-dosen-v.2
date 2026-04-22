@@ -111,9 +111,8 @@
     #ui-overlay::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); pointer-events: none; }
     .panel-inner { position: relative; z-index: 1; }
 
-    .title-row { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 8px; margin-bottom: 38px; text-align: center; }
-    .title-icon { font-size: 28px; filter: drop-shadow(0 3px 4px rgba(0,0,0,0.25)); }
-    .title-row h1 { font-size: clamp(1.6rem, 4vw, 1.05rem); font-weight: 800; color: white; letter-spacing: 0.02em; text-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .title-row { display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 8px; margin-bottom: 38px; text-align: center; }
+    .title-row h1 { width: 100%; font-size: clamp(1.6rem, 4vw, 1.05rem); font-weight: 800; color: white; letter-spacing: 0.02em; text-align: center; text-shadow: 0 2px 8px rgba(0,0,0,0.18); }
 
     .glass-select-wrap { margin-bottom: 16px; }
     .glass-select-wrap select {
@@ -168,7 +167,6 @@
       #ui-overlay { width: calc(100vw - 20px); min-height: auto; margin-top: 4px; padding: 24px 16px 18px; }
       .title-row { margin-bottom: 28px; }
       .title-row h1 { font-size: 1.9rem; }
-      .title-icon { font-size: 25px; }
       .glass-select-wrap select { min-height: 58px; font-size: 16px; }
       #day-selector { gap: 10px; }
       .day-btn { min-height: 58px; font-size: 16px; }
@@ -220,7 +218,6 @@
     <div id="ui-overlay">
       <div class="panel-inner">
         <div class="title-row">
-          <div class="title-icon">📚</div>
           <h1>JADWAL DOSEN TI UMY</h1>
         </div>
 
